@@ -2226,9 +2226,6 @@
     (path "/3206bd33-f28a-4398-afb1-82a1c4945b28/236bff94-aec8-4c4f-b516-ef2d66ea4c6b"
       (reference "#PWR030") (unit 1) (value "VCC") (footprint "")
     )
-    (path "/3206bd33-f28a-4398-afb1-82a1c4945b28/42fe10b8-766c-440b-8f0c-fdfcdf100a7d"
-      (reference "#PWR031") (unit 1) (value "VCC") (footprint "")
-    )
     (path "/3206bd33-f28a-4398-afb1-82a1c4945b28/d7480679-14cf-4409-9e61-974a56acab93"
       (reference "#PWR032") (unit 1) (value "GND") (footprint "")
     )
