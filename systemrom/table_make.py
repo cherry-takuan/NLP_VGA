@@ -2,7 +2,7 @@ import pprint
 
 def pattern(H_count, V_count):
     #result = 0b00011100
-    result = 0b00111100
+    result = 0b00011100
     if V_count == 49:
         #VRS
         result |= 0b00000001
@@ -16,9 +16,9 @@ def pattern(H_count, V_count):
         result &= 0b11110111
     if 490 <= H_count and H_count <= 491:
         result &= 0b11101111
-    if H_count < 480 and 1 <= V_count and V_count <= 40:
+    if H_count < 480 and (1 <= V_count and V_count <= 40):
         result |= 0b00100000
-        result &= 0b11011111
+        #result &= 0b11011111
     return result
 
 def pattern2(H_count, V_count):
@@ -57,16 +57,5 @@ print("================================")
 print("binary size =>", len(bin),"Byte")
 print("================================")
 
-#with open("./VGA.bin",mode='wb') as f:
-#    f.writelines(bin)
-#with open("./VGA_v2.bin",mode='wb') as f:
-#    f.writelines(bin)
-#with open("./VGA_v1.bin",mode='wb') as f:
-#    f.writelines(bin)
-with open("./VGA_v3.bin",mode='wb') as f:
+with open("./VGA_v6.bin",mode='wb') as f:
     f.writelines(bin)
-#with open("./VGA_v1_A.bin",mode='wb') as f:
-#    f.writelines(bin)
-
-
-
